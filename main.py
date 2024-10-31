@@ -1,6 +1,7 @@
-number = int(input("Enter a number to calculate the table from 1 to 10: "))
-calculate =1
-while calculate <=10:
-    result= number * calculate
-    print(f"{number} x {calculate} = {result}")
-    calculate +=1
+import math
+num1=int(input("Enter a number: "))
+number = 0
+while number <= num1:
+    result = math.pow(2,number)
+    print(round(result))
+    number +=1
