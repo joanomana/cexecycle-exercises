@@ -1,16 +1,8 @@
-num1 = int(input("Enter the first number: "))
-num2 = int(input("Enter the second number: "))
-number = 0
-while number <= num2:
+def print_multiplication_table():
+    for i in range(1, 11):
+        for j in range(1, 11):
+            print(f"{i * j:3}", end=" ")
+        print()
 
-    if num1 < num2:
-        number = num1 + 1
-        total_sum = 0
-        while number < num2:
-            total_sum += number
-            number += 1
-        print(f"The sum of numbers between {num1} and {num2} is {total_sum}")
-        break
-    else:
-        print("The first number should be less than the second number.")
-        break
+if __name__ == "__main__":
+    print_multiplication_table()
