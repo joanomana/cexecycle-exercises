@@ -1,8 +1,9 @@
-def print_multiplication_table():
-    for i in range(1, 11):
-        for j in range(1, 11):
-            print(f"{i * j:3}", end=" ")
-        print()
-
-if __name__ == "__main__":
-    print_multiplication_table()
+number = int(input("Enter a number: "))
+def divider(number):
+    dividers = []
+    for i in range(1,number+1):
+        if number % i ==0:
+            dividers.append(i)
+    return dividers
+dividers = divider(number)
+print(f"The dividers of {number} are {' '.join(map(str, dividers))}")
